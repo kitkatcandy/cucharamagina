@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuchara Mágica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #FFFBDE;
+      color: #096B68;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #096B68;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    main {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    form {
+      background: #90D1CA;
+      display: inline-block;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    select, button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #129990;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #096B68;
+    }
+
+    footer {
+      background-color: #096B68;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cuchara Mágica</h1>
+  <p>Tu recetario personal de confianza</p>
+</header>
+
+<main>
+  <h2>Explora recetas por tipo de comida</h2>
+
+  <form action="recetas.html" method="GET">
+    <label for="tipoComida">Elige una categoría:</label>
+    <select name="tipo" id="tipoComida" required>
+      <option value="">-- Selecciona una opción --</option>
+      <option value="carnes">Carnes</option>
+      <option value="ensaladas">Ensaladas</option>
+      <option value="postres">Postres</option>
+      <option value="bebidas">Bebidas</option>
+    </select>
+    <button type="submit">Ver recetas</button>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2025 Cuchara Mágica. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
